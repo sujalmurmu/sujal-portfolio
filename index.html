@@ -232,11 +232,25 @@ footer a{
         <h2>Contact Me</h2>
 
         <form action="https://formsubmit.co/murmusujal7@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Email Subject -->
+    <input type="hidden" name="_subject" value="New Message From Portfolio Website!">
+    
+    <!-- Redirect After Submit (optional) -->
+    <input type="hidden" name="_next" value="https://yourusername.github.io/sujal-portfolio/">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+
+</form>
     </div>
 </section>
 
@@ -263,6 +277,7 @@ window.onload = function(){
 </body>
 
 </html>
+
 
 
 
